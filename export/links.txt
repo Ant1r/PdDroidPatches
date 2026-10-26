@@ -1,1 +1,1 @@
-gh ant1r https://api.github.com/repos/ant1r/PdDroidPatches/contents/export2
+gh ant1r-export2 https://api.github.com/repos/ant1r/PdDroidPatches/contents/export2
