@@ -1,1 +1,2 @@
 gh ant1r_export2 https://api.github.com/repos/ant1r/PdDroidPatches/contents/export2
+pdz midi_test https://github.com/Ant1r/PdDroidPatches/raw/refs/heads/main/work/midi_test.pdz
