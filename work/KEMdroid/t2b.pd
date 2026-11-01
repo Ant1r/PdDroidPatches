@@ -1,0 +1,9 @@
+#N canvas 569 436 332 293 10;
+#X obj 76 57 inlet touch;
+#X obj 76 194 outlet bang;
+#X text 78 13 touch to bang;
+#X obj 76 157 sel 1;
+#X obj 76 107 t2tog;
+#X connect 0 0 4 0;
+#X connect 3 0 1 0;
+#X connect 4 0 3 0;
