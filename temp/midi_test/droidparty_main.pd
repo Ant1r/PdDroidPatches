@@ -1,0 +1,16 @@
+#N canvas 0 0 418 226 12;
+#X obj 8 9 cnv 20 400 200 empty ViewPort empty 20 12 0 12 #e0e0e0 #404040 0;
+#X text 43 51 this is a simple patch to test pdz from github;
+#N canvas 745 346 450 300 guts 1;
+#X obj 67 58 ctlin, f 29;
+#X obj 267 84 s \$0-ctlchan;
+#X obj 167 84 s \$0-ctlnum;
+#X obj 69 83 s \$0-ctlvalue;
+#X text 139 179 version: 0.2;
+#X connect 0 0 3 0;
+#X connect 0 1 2 0;
+#X connect 0 2 1 0;
+#X restore 296 157 pd guts;
+#X obj 76 121 nbx 5 20 -1e999 1e999 0 0 \$0-ctlvalue \$0-ctlvalue ctlvalue 0 -10 0 12 #fcfcfc #000000 #000000 0 256;
+#X obj 144 121 nbx 5 20 -1e999 1e999 0 0 \$0-ctlnum \$0-ctlnum ctlnum 0 -10 0 12 #fcfcfc #000000 #000000 0 256;
+#X obj 206 121 nbx 5 20 -1e999 1e999 0 0 \$0-ctlchan \$0-ctlchan ctlchan 0 -10 0 12 #fcfcfc #000000 #000000 0 256;
