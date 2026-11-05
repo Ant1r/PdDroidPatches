@@ -950,8 +950,8 @@
 #X msg 767 610 \$1 10;
 #X obj 767 633 line~;
 #X obj 901 564 r open-web;
-#X msg 901 587 openUrl https://github.com/b2renger/PdDroidParty_some_examples;
 #X obj 901 623 s sys;
+#X msg 901 587 gotoUrl https://github.com/b2renger/PdDroidParty_some_examples;
 #X connect 0 0 1 0;
 #X connect 1 0 2 0;
 #X connect 2 0 3 0;
@@ -1042,8 +1042,8 @@
 #X connect 102 0 103 0;
 #X connect 103 0 104 0;
 #X connect 104 0 100 1;
-#X connect 105 0 106 0;
-#X connect 106 0 107 0;
+#X connect 105 0 107 0;
+#X connect 107 0 106 0;
 #X restore 234 252 pd programme;
 #X obj 9 21 tgl 20 0 Mic empty empty 17 7 0 10 #fcfcfc #000000 #000000 0 1;
 #X text 37 23 Micro;
