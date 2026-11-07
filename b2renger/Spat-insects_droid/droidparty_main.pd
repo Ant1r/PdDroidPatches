@@ -1759,8 +1759,8 @@
 #X obj 422 317 clone -s 1 bird_abs 5;
 #X obj 422 341 clone -s 1 touch_abs 5;
 #X obj 413 168 r open-web;
-#X obj 413 227 s sys;
 #X msg 413 191 gotoUrl https://github.com/b2renger/PdDroidParty_some_examples;
+#X obj 413 227 s sys-rcv;
 #X connect 2 0 1 0;
 #X connect 2 0 4 0;
 #X connect 7 0 4 0;
@@ -1771,8 +1771,8 @@
 #X connect 24 0 25 0;
 #X connect 25 0 26 0;
 #X connect 26 0 27 0;
-#X connect 33 0 35 0;
-#X connect 35 0 34 0;
+#X connect 33 0 34 0;
+#X connect 34 0 35 0;
 #X restore 325 335 pd programme;
 #X obj 334 45 tgl 20 0 bird1_onoff bird1_onoff.r empty 17 7 0 10 #fcc4c4 #000000 #000000 0 1;
 #X obj 334 66 tgl 20 0 bird2_onoff bird2_onoff.r empty 17 7 0 10 #fcfcc4 #000000 #000000 0 1;
@@ -1780,11 +1780,11 @@
 #X obj 334 108 tgl 20 0 bird4_onoff bird4_onoff.r empty 17 7 0 10 #c4c4fc #000000 #000000 0 1;
 #X obj 334 129 tgl 20 0 bird5_onoff bird5_onoff.r empty 17 7 0 10 #e0c4fc #000000 #000000 0 1;
 #X obj 334 172 taplist 100 20 automove.r automove On Off;
-#X obj 133 64 cnv 15 25 25 cnv1 bird1.r empty 20 12 0 14 #fc0400 #404040 0;
-#X obj 107 144 cnv 15 25 25 cnv2 bird2.r empty 20 12 0 14 #f8fc00 #404040 0;
-#X obj 108 189 cnv 15 25 25 cnv3 bird3.r empty 20 12 0 14 #00fc04 #404040 0;
-#X obj 181 119 cnv 15 25 25 cnv4 bird4.r empty 20 12 0 14 #b8b8b8 #404040 0;
-#X obj 43 100 cnv 15 25 25 cnv5 bird5.r empty 20 12 0 14 #9c00fc #404040 0;
+#X obj 17 103 cnv 15 25 25 cnv1 bird1.r empty 20 12 0 14 #fc0400 #404040 0;
+#X obj 231 173 cnv 15 25 25 cnv2 bird2.r empty 20 12 0 14 #f8fc00 #404040 0;
+#X obj 183 193 cnv 15 25 25 cnv3 bird3.r empty 20 12 0 14 #00fc04 #404040 0;
+#X obj 183 122 cnv 15 25 25 cnv4 bird4.r empty 20 12 0 14 #b8b8b8 #404040 0;
+#X obj 245 18 cnv 15 25 25 cnv5 bird5.r empty 20 12 0 14 #9c00fc #404040 0;
 #X obj 334 197 wordbutton 100 30 Shake-all;
 #X obj 334 229 wordbutton 50 30 B;
 #X obj 334 152 wordbutton 100 20 Auto-Move;
