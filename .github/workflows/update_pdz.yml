@@ -1,0 +1,45 @@
+on:
+  workflow_dispatch:
+
+  push:
+    branches:
+      - 'main'
+      - 'test-ci'
+    tags:
+      - '*'
+
+  pull_request:
+
+name: Upload Pdzs in Release Asset
+
+jobs:
+  build:
+    permissions: write-all
+    name: Make Zips and Upload Release Asset
+    runs-on: ubuntu-latest
+    steps:
+      - name: Checkout code
+        uses: actions/checkout@v2
+
+      - name: Build project
+        run: |
+          ./export.sh
+
+      - name: Get export Release
+        id: get_export_release
+        uses: joutvhu/get-release@v1
+        with:
+          tag_name: dummytag
+        env:
+          GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
+
+      - name: Upload Release Asset
+        id: upload-release-asset
+        uses: actions/upload-release-asset@v1
+        env:
+          GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
+        with:
+          upload_url: ${{ steps.get_export_release.outputs.upload_url}}
+          asset_path: ./export2/MultiTutti.pdz
+          asset_name: MultiTutti.pdz
+          asset_content_type: application/zip
