@@ -28,5 +28,6 @@
 #X obj 562 104 vsl 35 300 0 1 0 0 \$0-volume-snd \$0-volume-rcv volume 0 -9 0 12 #fcfcfc #000000 #000000 0 1;
 #X obj 508 103 vsl 35 300 0 1 0 0 \$0-noise-snd \$0-noise-rcv noise 0 -9 0 12 #fcfcfc #000000 #000000 0 1;
 #X obj 107 169 cnv 20 290 80 empty empty MULTI\ TOUCH 20 45 2 35 #faff00 #404040 0;
-#X obj 107 250 cnv 20 290 80 empty empty NOISE\ TABLE 20 45 2 35 #faff00 #404040 0;
+#X obj 107 249 cnv 20 290 80 empty empty NOISE\ TABLE 20 45 2 35 #faff00 #404040 0;
 #X obj 32 88 touch 450 330 \$0-maintouch multi;
+#X text 539 407 ant1r 2026;
