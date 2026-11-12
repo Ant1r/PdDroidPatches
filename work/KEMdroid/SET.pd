@@ -1,4 +1,4 @@
-#N canvas 658 68 594 684 10;
+#N canvas 975 65 795 684 10;
 #X declare -path rj;
 #X declare -path abl_link;
 #X obj 106 43 Ping \$1;
@@ -59,6 +59,10 @@
 #X msg 207 481 tempo \$1;
 #X msg 12 519 connect 0;
 #X obj 77 518 abl_link~ 1 0 256 10;
+#X obj 396 599 send pd;
+#X msg 384 519 colors #000000 #ffffff #0000ff #ff0000;
+#X msg 416 554 colors #B0B0B0 #000000 #FF0000 #0000FF;
+#X obj 416 482 loadbang;
 #X connect 0 0 2 0;
 #X connect 2 0 4 0;
 #X connect 4 0 20 0;
@@ -119,3 +123,6 @@
 #X connect 57 0 49 0;
 #X connect 57 0 53 0;
 #X connect 57 3 50 0;
+#X connect 59 0 58 0;
+#X connect 60 0 58 0;
+#X connect 61 0 60 0;
