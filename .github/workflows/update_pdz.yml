@@ -18,19 +18,11 @@ jobs:
     runs-on: ubuntu-latest
     steps:
       - name: Checkout code
-        uses: actions/checkout@v2
+        uses: actions/checkout@v6
 
       - name: Build project
         run: |
           ./export.sh
-
-      - name: Get export Release
-        id: get_export_release
-        uses: joutvhu/get-release@v1
-        with:
-          tag_name: dummytag
-        env:
-          GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
 
       - name: Upload Release Asset
         id: upload-release-asset
