@@ -1,4 +1,4 @@
-#N canvas 257 388 763 567 12;
+#N canvas 122 288 674 461 12;
 #X declare -path droidparty-abstractions;
 #N canvas 1106 205 461 399 stuff 1;
 #X obj 39 22 declare -path droidparty-abstractions;
@@ -23,11 +23,13 @@
 #X connect 8 0 9 0;
 #X connect 9 0 7 0;
 #X connect 10 0 11 0;
-#X restore 141 26 pd stuff;
-#X obj 24 77 cnv 20 600 350 empty ViewPort empty 20 12 0 12 #dfdfdf #404040 0;
-#X obj 562 104 vsl 35 300 0 1 0 0 \$0-volume-snd \$0-volume-rcv volume 0 -9 0 12 #fcfcfc #000000 #000000 0 1;
-#X obj 508 103 vsl 35 300 0 1 0 0 \$0-noise-snd \$0-noise-rcv noise 0 -9 0 12 #fcfcfc #000000 #000000 0 1;
-#X obj 107 169 cnv 20 290 80 empty empty MULTI\ TOUCH 20 45 2 35 #faff00 #404040 0;
-#X obj 107 249 cnv 20 290 80 empty empty NOISE\ TABLE 20 45 2 35 #faff00 #404040 0;
-#X obj 32 88 touch 450 330 \$0-maintouch multi;
-#X text 539 407 ant1r 2026;
+#X restore 66 389 pd stuff;
+#X obj 9 12 cnv 20 600 350 empty ViewPort empty 20 12 0 12 #dfdfdf #404040 0;
+#X obj 563 38 vsl 35 300 0 1 0 0 \$0-volume-snd \$0-volume-rcv volume 0 -9 0 12 #ff3900 #000000 #000000 0 1;
+#X obj 520 38 vsl 35 300 0 1 0 0 \$0-noise-snd \$0-noise-rcv noise 0 -9 0 12 #ff6800 #000000 #000000 0 1;
+#X obj 17 23 touch 450 330 \$0-maintouch multi;
+#X text 524 342 ant1r 2026;
+#X obj 477 38 vsl 35 300 -5 5 0 0 \$0-gain-snd \$0-gain-rcv gain 0 -9 0 12 #ff9100 #000000 #000000 0 1;
+#X obj 18 24 cnv 20 448 328 empty empty empty 20 45 2 35 #faff00 #404040 0;
+#X obj 100 109 cnv 20 290 80 empty empty MULTI\ TOUCH 20 45 2 35 #faff00 #404040 0;
+#X obj 108 190 cnv 20 290 80 empty empty NOISE\ TABLE 20 45 2 35 #faff00 #404040 0;
