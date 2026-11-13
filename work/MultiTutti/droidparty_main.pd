@@ -1,4 +1,4 @@
-#N canvas 124 47 811 548 10;
+#N canvas 171 91 573 387 10;
 #X declare -path droidparty-abstractions;
 #X declare -path moonlib;
 #X declare -path gammabs;
@@ -211,6 +211,7 @@
 #X listbox 298 389 20 0 0 0 - - - 0;
 #X obj 74 378 poly 12 1, f 10;
 #X obj 105 453 - 1;
+#X obj 294 37 inlet;
 #X connect 0 0 1 0;
 #X connect 1 0 3 0;
 #X connect 1 1 2 0;
@@ -270,10 +271,16 @@
 #X connect 41 1 4 1;
 #X connect 41 2 4 2;
 #X connect 42 0 20 1;
+#X connect 43 0 41 0;
 #X restore 169 127 pd poly_touch;
 #X msg 36 80 all \$3 \$1 \$2;
 #X obj 36 130 clone 12 voice \$0;
-#X text 340 637 version: 0.9;
+#X msg 228 100 resize \$1;
+#X obj 305 86 loadbang;
+#X obj 152 725 r expr~ atan($v1);
+#X obj 36 210 hip~ 5;
+#X msg 228 77 8;
+#X text 340 637 version: 0.1;
 #X connect 1 0 2 0;
 #X connect 4 0 111 0;
 #X connect 5 0 72 0;
@@ -354,7 +361,7 @@
 #X connect 82 0 84 0;
 #X connect 83 0 72 0;
 #X connect 84 0 74 0;
-#X connect 85 0 102 0;
+#X connect 85 0 116 0;
 #X connect 86 0 79 0;
 #X connect 87 0 86 0;
 #X connect 87 0 90 0;
@@ -391,6 +398,11 @@
 #X connect 110 0 112 1;
 #X connect 111 0 112 0;
 #X connect 112 0 85 0;
+#X connect 113 0 110 0;
+#X connect 113 0 112 0;
+#X connect 114 0 117 0;
+#X connect 116 0 102 0;
+#X connect 117 0 113 0;
 #X restore 39 253 pd stuff;
 #X obj 40 40 touch 350 200 xy multi;
 #X obj 396 40 cnv 18 85 200 empty empty empty 20 12 0 10 #bbbbbb #404040 0;
