@@ -1,0 +1,55 @@
+<!DOCTYPE html><html lang="en-us"><head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title> PdDroidParty downloads</title>
+    <link href="https://fonts.googleapis.com/css?family=Didact+Gothic" rel="stylesheet" type="text/css">
+    <link href="style.css" rel="stylesheet" type="text/css">
+    <meta name="title" content="Run your Pure Data patches on Android">
+    <meta name="description" content="PdDroidParty is an open source Android app you can use to run your Pure Data patches on Android.">
+    <!-- Open Graph / Facebook -->
+    <meta property="og:type" content="website">
+    <meta property="og:url" content="https://droidparty.net/">
+    <meta property="og:title" content="Run your Pure Data patches on Android">
+    <meta property="og:description" content="PdDroidParty is an open source Android app you can use to run your Pure Data patches on Android.">
+    <meta property="og:image" content="https://droidparty.net/img/header-image-1024-500.jpg">
+    <!-- Twitter -->
+    <meta property="twitter:card" content="summary_large_image">
+    <meta property="twitter:url" content="https://droidparty.net/">
+    <meta property="twitter:title" content="Run your Pure Data patches on Android">
+    <meta property="twitter:description" content="PdDroidParty is an open source Android app you can use to run your Pure Data patches on Android.">
+    <meta property="twitter:image" content="https://droidparty.net/img/header-image-1024-500.jpg">
+  </head>
+<body>
+  <header>
+    <img src="img/icon.png" id="icon">
+    <a href="index.html">PdDroidParty</a>
+  </header>
+
+  <nav>
+    <a href="index.html">Home</a>
+    <a href="documentation.html">Documentation</a>
+    <a href="sharing.html">Sharing patches</a>
+    <a href="privacy.html">Privacy</a>
+  </nav>
+
+  <main id="content"><h1>How to share PdDroidParty patches</h1>
+  <p>
+  </p>
+
+<h2>Sharing patches as "pdz"</h2>
+<p>You can share your PdDroidParty compatible patches with people by zipping up the folder with your patch in it
+and renaming the file extension from <code>.zip</code> to <code>.pdz</code>.
+When you send a <code>.pdz</code> file to somebody, PdDroidParty will launch and run the patch on their device if they have the app installed.
+You should make sure the zip file contains the top level directory with the name of your patch, for example MyPatch.zip should contain a folder
+called <code>MyPatch</code>, which contains your files like <code>droidparty_main.pd</code> etc.
+You can also include a Pd comment with the text "version: 99" to set the version of your patch so that people receiving them will know
+what version they are being asked to install. Each time you release a new version of your <code>.pdz</code> file you can increment the version number.</p>
+
+
+  <footer>
+    <p>Copyright <a href="https://mccormick.cx">Chris McCormick</a> since 2011.</p>
+    <p><a href="https://twitter.com/mccrmx">@mccrmx</a></p>
+  </footer>
+
+
+</body></html>
