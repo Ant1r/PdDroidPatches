@@ -116,6 +116,8 @@ Open the file <code>droidparty-abstractions/_OVERVIEW.pd</code> for more details
 <p>See <code>droidparty-demos/pure-widgets-demo/droidparty_main.pd</code> for an example of this feature.</p>
 <h2>Orientation</h2>
 <p>The patch will be oriented according to the ViewPort canvas as documented above, or the dimensions of the <code>droidparty_main.pd</code> patch if there is no viewport canvas. If the current patch or viewport has a larger width than height, it will rotate to landscape on the phone. If it has a larger height than width, it will rotate to portrait.</p>
+<h2>Icon</h2>
+<p>You can add an "icon.png" file in your directory, it will be used by the Patch Selector to represent the patch, in place of the default PdDroidParty icon.</p>
 <h2>Config</h2>
 <p>If you want to prevent the app from asking for record permission for your patch you can add a subpatch like <code>pd config</code> and put a comment inside the subpatch like <code>PdDroidParty.config.norecord 1</code>.</p>
 </main>
