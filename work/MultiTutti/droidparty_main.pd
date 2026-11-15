@@ -3,7 +3,7 @@
 #X declare -path moonlib;
 #X declare -path gammabs;
 #X obj 35 35 cnv 18 450 210 empty ViewPort equal 20 12 0 10 #e0e0e0 #dfdfdf 0;
-#N canvas 783 11 936 846 stuff 0;
+#N canvas 783 11 936 846 stuff 1;
 #X obj 26 704 dac~;
 #X obj 257 17 loadbang;
 #X msg 257 38 \; pd dsp 1;
@@ -280,7 +280,7 @@
 #X obj 152 725 r expr~ atan($v1);
 #X obj 36 210 hip~ 5;
 #X msg 228 77 8;
-#X text 340 637 version: 0.1;
+#X text 340 637 version: v0.10;
 #X connect 1 0 2 0;
 #X connect 4 0 111 0;
 #X connect 5 0 72 0;
